@@ -1,0 +1,57 @@
+{
+"PersonalInformation" : [
+{
+"name" : "Surjith Vijayakumar",
+"email" : "surjith@gmail.com",
+"Phone" : "+91 96279186",
+"degree" : "B.Tech-Information Technology",
+"location" : {
+"address" : "#2-13,Vazhathottam,Palliyadi",
+"Pincode": "629169",
+"city" : "Marthandam",
+"District" : "Kanyakumari District",
+"State" : "TamilNadu",
+}
+}
+],
+"work": [
+    {
+      "company": "Logitrans Technology PvtLtd",
+      "position": "UI / UX Designer",
+      "startDate": "23-May-2018",
+      "endDate": "15-March-2022",
+      "summary": "i am worked her around 3.8 years as a UI / UX Designer Role",
+      "highlights": [
+        "i) Creating Mockup Design."
+		"ii) Once Designer has been confirmed by the respective team, Implemented the HTML Work."
+		"iii) Once HTML Work is Done send the files to developer Team."
+      ]
+    },
+	{
+      "company": "Xerago E-Biz Privat Limited",
+      "position": "Web Developer",
+      "startDate": "23-September-2015",
+      "endDate": "25-January-2018",
+      "summary": "i am worked her around 2 years as a Web Developer Role",
+      "highlights": [
+	  "As per Requirement changing the content."
+	  "Creating new Web Pages"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front End Designer & Developer",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML, CSS, SCSS, BOOTSTRAP,JAVASCRIPT, PHOTOSHOP,ILLUSTRATOR,ADOBE XD"
+      ]
+    }
+  ],
+  "languagesKnown": [
+    {
+      "language": "TAMIL,MALAYALAM,ENGLISH",
+      "fluency": "intermediate level",.
+    }
+  ],
+}
