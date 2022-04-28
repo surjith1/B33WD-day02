@@ -1,0 +1,45 @@
+1)Write a blog on Difference between HTTP1.1 vs HTTP2
+HTTP is the Hyper Text Transfer Protocol.
+
+HTTP1.1 connection speed is lower. where as in HTTP2.0 connection speed is faster.
+HTTP1.1 is risk for network congestion. but in HTTP2.0 there is no network congestion
+Page loading time is more in HTTP1.1 and Page loading time is less in HTTP2.0
+HTTP1.1 it sends the data one by one. but in HTTP2.0 can send multiple data at a time due to multiflexing mechanism.
+
+
+-------------------************-----------------****************---------------------------------***************-----------------
+
+2)Write a blog about objects and its internal representation in Javascript
+	Objects in Javascript is complex data type. because it can hadle more number of values at a time.
+	
+Object is the Key-Value pair of data type.
+It is a unordered collection of related data in the form of Key-Value pair.
+we ca n access the properties using two notations;
+1)dot notation:
+	Using dot notation we can access the data as like blow syntax.
+	e.g objectName.propertyName
+2) Bracket Notation:
+	Objects are sometimes called associative arrays
+	Each propeerty is associated with the string values in this notatation.
+	e.g)
+	ObjectName['proertyName']=Value
+	propertyName that has  s space or hyphen or started with Number can only accessed with this Bracket Notation.
+	
+
+Creating Objects:
+Object Literals can be created in 3 ways.
+1) Using "new" Keyword.
+	This kind is hepful in using constructor functions.
+
+2) Object.Create() menthod.
+	this method is also useful to create the Objects.
+	This method allows to use the Object.prototype.
+	This method doesnot require to create the constructor functions.
+
+3) Using explicit menthod using curly brace.
+	this method is normally using.
+	e,g)
+	let objectName={
+	name:"xxx",
+	age:52,
+	}
