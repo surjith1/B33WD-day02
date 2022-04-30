@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text],
+        select,
+        textarea,
+        input[type="email"] {
+            /* width: 100%; */
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .row {
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column img {
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        form>div {
+            display: flex;
+        }
+
+        form>div label,
+        form>div select {
+            width: 200px;
+            min-width: 200px;
+        }
+        form>div label {
+            text-align: right;
+            margin-right: 25px;
+        }
+
+        form>div input {
+            width: calc(100% - 200px);
+        }
+
+        p.btn-wrap {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        p.btn-wrap>button {
+            padding: 10px;
+            min-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Event 1</h2>
+            <p>No of available: <span class="seats-count">23</span></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://i.picsum.photos/id/306/300/300.jpg?hmac=nNDQZZw-NzC41Q9IKSaw8c5nSq5x7lo-qwecirmqs7w"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <div>
+
+                        <label for="fname">Name:</label>
+                        <input type="text" id="fname" name="firstname"><br /><br />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="lname" name="email"> <br /><br />
+                    </div>
+                    <div>
+                        <label for="Phone">Phone No:</label>
+                        <input type="text" id="phone" name="phone"> <br /><br />
+                    </div>
+                    <div>
+                        <label for="country">No of Seats:</label>
+                        <select id="seats" name="seats">
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                        </select> <br /> <br />
+                    </div>
+                    <div>
+                        <label for="Phone">No of Attendee 2:</label>
+                        <input type="text" id="phone" name="phone"> <br /><br />
+                    </div>
+                    <p class="btn-wrap"><button>Submit</button> <button>Cancel</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
