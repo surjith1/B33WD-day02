@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>MRF - array method Task in console</h1>
+    <script>
+        var req = new XMLHttpRequest();
+
+        req.open('GET', 'https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json', true);
+        req.send();
+        req.onload = function () {
+            var data = JSON.parse(this.response);
+            console.log(data);
+            // for( i=0;i<data.length;i++){
+            // if(data[i].region=="Asia"){
+            // console.log(data[i])
+            // }
+            // 
+            // }
+            // Get all the countries from Asia continent /region using Filter function
+            console.log("Under Asian Region Countries");
+            let asianRegion = data.filter((e) => e.region == "Asia");
+            console.log(asianRegion);
+            for (var i = 0; i < asianRegion.length; i++) {
+                console.log(asianRegion[i].name);
+            }
+            //Get all the countries with a population of less than 2 lakhs using Filter function
+            console.log("population less than 200000")
+            let population = data.filter((e) => e.population < 200000);
+            console.log(population);
+
+            //Print the following details name, capital, flag using forEach function
+            console.log("name, capital, flag using forEach function");
+            let nameCapitalFlag = data.forEach(element => {
+                console.log(`Name: ${element.name}, Capital: ${element.capital}, Flag: ${element.flag}`)
+            });
+            //Print the total population of countries using reduce function
+            console.log("Total Population of the Countries using Reduce");
+            var s = 0;
+            for (var p = 0; p < data.length; p++) {
+                s = s + data[p].population;
+            }
+            console.log("Total population: ", s)
+
+            //console.log(data[p].population)
+            // let totalPopulation = data.reduce((prev,current)=>{prev+current})
+            //  console.log(totalPopulation)
+
+            //Print the country which uses US Dollars as currency
+            console.log("Print the country which uses US Dollars as currency?")
+             let dollar = data.filter((e) => e.currencies[0].code == "USD");
+            console.log(dollar);
+            for(var c=0; c<dollar.length;c++) {
+                console.log(dollar[c].name)
+            }
+
+        }
+    </script>
+</body>
+
+</html>

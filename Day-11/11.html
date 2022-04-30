@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The fieldset element + CSS</h1>
+
+    <form
+        onsubmit="alert(`Your Details are Name=${candidateName.value} E-Mail= ${email.value} Date of Birth= ${dob.value} Your Car is=${cars.value} CheckBox Value=${cbox.value} Upload File is ${file.value} Month is ${month.value} Age is ${age.value}`)">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="fname">Enter your Name:</label>
+            <input type="text" id="name" name="candidateName" value="Surjith"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Enter your DOB:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="cars">Choose a Car: </label>
+            <select name="cars" id="cars">
+                <option value="valvo">Volvo</option>
+                <option value="saab">SAAB</option>
+                <option value="opel">Opel</option>
+                <option value="saab">SAAB</option>
+            </select> <br /></br />
+
+            <input type="checkbox" id="cbox" name="cbox" checked>
+            <label for="scales">Scales</label>
+
+            <input type="checkbox" id="cbox" name="cbox">
+            <label for="horns">Horns</label><br />
+            <br />
+
+            <label for="file">Upload Files</label>
+            <input type="file" id="file" name="file"><br /><br />
+
+            <label for="start">Start month:</label>
+
+            <input type="month" id="month" name="month" min="2018-03" value="2018-05"> <br /><br />
+
+            <label for="age">Age:</label>
+
+            <input type="number" id="age" name="age" min="1" max="100"> <br /><br />
+            <label for="psw">Password:</label>
+            <input type="password" id="psw" name="psw" min="1" max="8"> <br /><br />
+            <label for="images">Images</label>
+            <input type="image" id="image" alt="Login"
+                src="https://thumbs.dreamstime.com/b/sample-button-square-d-push-sign-177267989.jpg"> <br /> <br />     
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

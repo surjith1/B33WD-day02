@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        caption {
+            text-align: center!important;
+            caption-side: top!important;
+        }
+        .table-bordered td, .table-bordered th {
+            font-weight: 200 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table-bordered">
+	<caption>Health Chart</caption>
+        <col>
+        <colgroup span="4"></colgroup>
+        <colgroup span="4"></colgroup>
+        <tr>
+            <th rowspan="2" style="vertical-align : middle;text-align:center;">State of Health</th>
+            <th colspan="2" style="horizontal-align : middle;text-align:center; width: 50%;">Fasting Value</th>
+            <th colspan="2">After Eating</th>
+        </tr>
+        <tr>
+            <th scope="col">Minimum</th>
+            <th scope="col">Maximum</th>
+			<th scope="col">2 hours After Eating</th>
+        </tr>
+		
+		
+		
+        <tr>
+            <th>Healthy</th>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+		
+		<tr>
+            <th>Pre-Diabetes</th>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+		
+		<tr>
+            <th>Diabetes</th>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+       
+    </table>
+</body>
+
+</html>

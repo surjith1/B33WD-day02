@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anthor Tag </title>
+<style>
+section {
+border:3px solid #000;
+padding: 20px;
+}
+.red-bg {
+    background: #f00;
+    color: #fff;
+	    margin-bottom: 10px;
+    padding: 5px;
+}
+article {
+    display: flex !important;
+}
+article > span {
+    flex-basis: 100%;
+	padding:10px;
+}
+article > span input,.fw {
+width:100%;
+}
+</style>
+</head>
+<body>
+
+<section> 
+<div class="red-bg">Yes i Want to Subcribe to Mag - O - Zine</div>
+<form>
+<article>
+<span>
+  <input type="text" id="name" name="candidatefName" value="Joe"><br>
+  <label for="fname">First Name:</label>
+  </span>
+  <span>
+   <input type="text" id="name" name="candidatelName" value="Schemepher"><br>
+  <label for="fname">Last Name:</label>
+   </span><br/>
+</article> <br/>
+
+ 
+  <input type="text" class="fw" id="name" name="address" value="1001  Whashingtor Street"><br>
+  <label for="fname">Address:</label> <br/> <br/>
+  <article>
+  <span>
+  <input type="text" id="City" name="City" value="Chennai"><br>
+  <label for="fname">City:</label>
+  </span>
+  <span>
+  <input type="text" id="State" name="State" value="T4"><br>
+  <label for="fname">State:</label>
+  </span>
+<span>
+  <input type="text" id="Zip" name="Zip" value="9999"><br>
+  <label for="fname">Zip:</label>
+  </span> 
+</article>  <br/>
+<label for="subscribe"> Subscribe for</label>
+<input type="checkbox" id="1year" name="1year" value="1 year ($19.95)" checked>
+<label for="">1 year ($19.95)</label>
+<input type="checkbox" id="2year" name="2year" value="2 year ($35.00)">
+<label for="">2 year ($35.00)</label> <br/> <br/>
+
+<label for="info"> Send me More Information about:</label> <br/>
+<input type="checkbox" id="1year" name="1year" value="Computer-Zine" checked>
+<label for="">Computer-Zine</label> <br/> <br/>
+<input type="checkbox" id="2year" name="2year" value="Fishing-Zine">
+<label for="">Fishing-Zine</label><br/> <br/>
+<input type="checkbox" id="2year" name="2year" value="Cat-O-Zine" checked>
+<label for="">Cat-O-Zine</label><br/> <br/>
+</form>
+</section>
+
+
+</body>
+</html>
